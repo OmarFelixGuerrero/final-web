@@ -78,15 +78,15 @@
         <!-- Section-->
         <div class="form-login text-center">
             <form  action="registro-usuario" method="post">
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                    <input type="email" id="form2Example1" class="form-control" name="correo" />
-                  <label class="form-label" for="form2Example1">Correo Eletrónico</label>
-                </div>
+               <!-- Email input -->
+               <div class="form-outline mb-4">
+                   <input maxlength="50" type="email" id="form2Example1" class="form-control" value placeholder="ejemplo@dominio.com" pattern="[a-zA-Z-9-_.]+@[a-zA-Z-9-_]+(\.[a-zA-Z]{2,8}){1,5}" required>
+                  <label class="form-label" for="form2Example1">Correo Electrónico</label>
+                </div>                
               
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form2Example2" class="form-control" name="contra"/>
+                    <input type="password" id="form2Example2" class="form-control" name="contra" required="" maxlength="50" minlength="4"/>
                   <label class="form-label" for="form2Example2">Contraseña</label>
                 </div>
               
